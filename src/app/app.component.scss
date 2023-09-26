@@ -1,0 +1,7 @@
+.container-smr {
+  height: calc(100vh - 70px); // 100% de altura pantalla - 70px altura del header
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}

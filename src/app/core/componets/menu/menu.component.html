@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <nav id="sidebar">
+    <div class="sidebar-header ">
+      <div *ngFor="let item of optionsList">
+        <div class="title mb-3">
+          <div>
+            <h6 class="mt-2">{{item.title}} <span class="float-end"> <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              </span></h6>
+          </div>
+        </div>
+        <ul>
+
+          <div class="form-check" *ngFor="let i of item.options">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              {{i.name}}
+            </label>
+          </div>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>

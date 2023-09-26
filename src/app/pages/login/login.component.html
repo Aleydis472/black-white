@@ -1,0 +1,44 @@
+<div class="main p-5">
+    <div class="container-login ">
+        <div class="row h-100 d-flex align-items-center justify-content-center">
+            <div class="col-md-5 h-100 container-background-with-img ">
+                <div class="background d-md-block">
+                </div>
+            </div>
+
+            <div class="col-md-7 container-form">
+                <div class="content p-4">
+                    <div class="text-center image mb-2">
+                        <img src="./../../../assets/img/logo-black-white.png" width="65%" alt="Logo">
+                    </div>
+
+                    <form [formGroup]="loginForm">
+                        <label class="mb-2">Usuario</label>
+                        <div class="form-group">
+                            <i class="icon fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Ingrese usuario" required="required"
+                                formControlName="UserName">
+                        </div>
+
+                        <label class="mb-2 mt-3">Contraseña</label>
+                        <div class="form-group">
+                            <i class="icon fa fa-lock"></i>
+                            <input [type]="view ? 'text' : 'password'" class="form-control"
+                                placeholder="Ingrese contraseña" required="required" formControlName="Password">
+                            <i class="fa fa-{{view ? 'eye' : 'eye-slash'}} fa-lg inside show-password"
+                                aria-hidden="true" (click)="view = !view"></i>
+                        </div>
+                    </form>
+
+                    <div class="d-grid gap-auto mt-4 button">
+                        <button type="button" class="btn btn-login" (click)="login()">Ingresar</button>
+                    </div>
+
+                    <div class="remember mt-3">
+                        ¿Olvidaste tu contraseña?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
