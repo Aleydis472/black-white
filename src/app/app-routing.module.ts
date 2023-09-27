@@ -12,6 +12,12 @@ const routes: Routes = [
       { path: 'mujer', loadChildren: () => import('./pages/womens-clothing/womens-clothing.module').then(m => m.WomensClothingModule) },
     ]
   },
+  {
+    path: 'ropa',
+    children: [
+      { path: 'compras', loadChildren: () => import('./pages/buy-clothing/buy-clothing.module').then(m => m.BuyClothingModule) },
+    ]
+  },
   { path: '', redirectTo: '/iniciar-sesion', pathMatch: 'full' },
   { path: '**', redirectTo: '/iniciar-sesion', pathMatch: 'full' }
 ];
