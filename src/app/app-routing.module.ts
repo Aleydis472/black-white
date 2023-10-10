@@ -16,9 +16,6 @@ const routes: Routes = [
       { path: 'mujer', loadChildren: () => import('./pages/womens-clothing/womens-clothing.module').then(m => m.WomensClothingModule) },
     ]
   },
-
- 
-
   { path: '', redirectTo: '/iniciar-sesion', pathMatch: 'full' },
   { path: '**', redirectTo: '/iniciar-sesion', pathMatch: 'full' }
 ];
