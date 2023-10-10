@@ -1,0 +1,38 @@
+.card {
+  height: 18rem;
+  width: 18rem;
+  margin-bottom: 12rem;
+}
+
+
+.carousel-item:not(.active) {
+  filter: blur(8px);
+  /* Aplicar desenfoque a las imágenes laterales */
+}
+
+.carousel .carousel-item {
+  height:80vh;
+  width: 100%; 
+
+}
+
+.carousel-item img {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h2 {
+  text-decoration: underline double;
+  /* Agrega dos rayas debajo del texto */
+  margin: 30px;
+}
+
+.card-des {
+  color: #DC143C;
+}
