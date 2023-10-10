@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 
@@ -12,9 +12,9 @@ const TOKEN = 'jwttoken';
 })
 export class LoginComponent implements OnInit {
   view: boolean = false;
-  loginForm!: FormGroup;
+  loginForm!: UntypedFormGroup;
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {
+  constructor(private formBuilder: UntypedFormBuilder, private router: Router) {
   }
 
   ngOnInit(): void {
