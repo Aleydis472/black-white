@@ -13,8 +13,9 @@ export class MenuComponent implements OnInit {
       options: [
         {
           name: 'Tops y Bodies',
-          path: '',
+          path:  '',
         },
+
         {
           name: 'Pantalones',
           path: '',

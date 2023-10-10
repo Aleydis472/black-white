@@ -11,6 +11,13 @@ const routes: Routes = [
   },
 
   {
+    path: 'carro', loadChildren: () => import('./pages/carrito/carrito.module').then(m => m.carritoModule)
+  },
+  {
+    path: 'detalle', loadChildren: () => import('./pages/buy-clothing/buy-clothing.module').then(m => m.BuyClothingModule)
+  },
+
+  {
     path: 'ropa',
     children: [
       { path: 'mujer', loadChildren: () => import('./pages/womens-clothing/womens-clothing.module').then(m => m.WomensClothingModule) },

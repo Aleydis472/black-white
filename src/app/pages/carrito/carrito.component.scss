@@ -1,0 +1,95 @@
+/* Estilos para la clase card-text2 */
+.card-text2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    width: 1150px;
+    height: 680px;
+    border-radius: 6px;
+  }
+  
+  .card-text2 .fw-bold {
+    font-weight: bold;
+    margin-left: 140px;
+    font-size: 26px;
+  }
+  
+  .card-text2 span.text-sub {
+    font-style: italic;
+    margin-left: 140px;
+    font-size: 13px;
+  }
+  
+  /* Estilos para la clase cant-buybox */
+  .cant-buybox {
+    margin-top: 10px;
+  }
+  
+  .cant-buybox .label-cant-buybox label.text-buybox1 {
+    font-size: 22px;
+    margin-left: 140px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cant-buybox .quanty-select {
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+  }
+  
+  .cant-buybox .action-delete input.a-color-link {
+    color: rgb(145, 100, 17);
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 1005px;
+  }
+  
+  /* Estilos para la clase subtotal-label-buybox */
+  .subtotal-label-buybox {
+    font-weight: bold;
+  }
+  
+  /* Estilos para la clase subtotal-amount-buybox */
+  #subtotal-amount-buybox {
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
+  /* Estilos para el botón Proceed to checkout */
+  input[name="proceedCheckout"].a-button-input {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  input[name="proceedCheckout"].a-button-input:hover {
+    background-color: #0056b3;
+  }
+/* estilos imagen  */
+  .img1-carro {
+    height: 200px;
+    width: 140px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+}
+
+/* subtotal  */
+.col-md-4{
+    position: absolute;
+    margin-left: 1220px;
+    text-align: center;
+    padding: 3px;
+    margin-right: 3px;
+    width: 300px;
+}
+
